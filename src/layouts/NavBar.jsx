@@ -35,11 +35,11 @@ const NavBar = () => (
       <img src={logo} alt="YNU Logo" />
     </StyledLink>
     <Nav>
-      <Link to="/lab_home_page">Home</Link>
-      <Link to="/lab_home_page/projects">Projects</Link>
-      <Link to="/lab_home_page/people">People</Link>
-      <Link to="/lab_home_page/publications">Publications</Link>
-      <Link to="/lab_home_page/activities">Activities</Link>
+      <Link to="/">Home</Link>
+      <Link to="/projects">Projects</Link>
+      <Link to="/people">People</Link>
+      <Link to="/publications">Publications</Link>
+      <Link to="/activities">Activities</Link>
       <a onClick={()=>{alert("ynuids@outlook.com")}}>Contact us</a>
       {/* <PrimaryButton>Click me</PrimaryButton> */}
     </Nav>
