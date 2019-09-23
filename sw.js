@@ -26,27 +26,27 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d67281ec76dc86fc926c.js"
+    "url": "webpack-runtime-6d5e34e75c014280a83d.js"
   },
   {
-    "url": "commons.1882e630f0f35379dcc8.css"
+    "url": "commons.64e20a578a92faa6e52d.css"
   },
   {
-    "url": "commons-c6f14aa6144bd1ceb1d3.js"
+    "url": "commons-a7fb3c72c7c58feb01ef.js"
   },
   {
-    "url": "app-1af693712cdc2089011b.js"
+    "url": "app-fb057ea65f4e3e4f0bae.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-9d88de4cd3a4697ba433.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0eb35713a90dba300500c670f9675628"
+    "revision": "f4bec9a2bd356bf79b1f7a055c87af26"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "807ea7ca7e1f5cc8466bf11a9f859c31"
+    "revision": "148c4df62c16c03deb83d18ca6932ac3"
   },
   {
     "url": "manifest.webmanifest",
@@ -69,12 +69,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/ynuidsp.github.io/lab_home_page`), ``)
+  pathname = pathname.replace(new RegExp(`^/lab_home_page`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/ynuidsp.github.io/lab_home_page/app-1af693712cdc2089011b.js`))) {
+  if (!resources || !(await caches.match(`/lab_home_page/app-fb057ea65f4e3e4f0bae.js`))) {
     return await fetch(event.request)
   }
 
@@ -87,7 +87,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/ynuidsp.github.io/lab_home_page/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/lab_home_page/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
