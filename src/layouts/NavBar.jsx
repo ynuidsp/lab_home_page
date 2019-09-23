@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
+import logo from '../../static/logo/ynu-logo.png';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -31,14 +32,14 @@ const Nav = styled.nav`
 const NavBar = () => (
   <Headroom calcHeightOnResize disableInlineStyles>
     <StyledLink to="/">
-      <img src='http://www.ynu.edu.cn/images/logo.png' alt="YNU Logo" />
+      <img src={logo} alt="YNU Logo" />
     </StyledLink>
     <Nav>
-      <Link to="/">Home</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/people">People</Link>
-      <Link to="/publications">Publications</Link>
-      <Link to="/activities">Activities</Link>
+      <Link to="/lab_home_page">Home</Link>
+      <Link to="/lab_home_page/projects">Projects</Link>
+      <Link to="/lab_home_page/people">People</Link>
+      <Link to="/lab_home_page/publications">Publications</Link>
+      <Link to="/lab_home_page/activities">Activities</Link>
       <a onClick={()=>{alert("ynuids@outlook.com")}}>Contact us</a>
       {/* <PrimaryButton>Click me</PrimaryButton> */}
     </Nav>
