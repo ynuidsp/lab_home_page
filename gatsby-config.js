@@ -1,7 +1,7 @@
 const config = require('./config/site');
 
 module.exports = {
-  pathPrefix: `/lab_home_page`,
+  pathPrefix: `/`,
   siteMetadata: {
     ...config,
   },
