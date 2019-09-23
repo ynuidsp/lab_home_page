@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{245:function(t,n,e){"use strict";e.r(n);var i=e(0),a=(e(1),e(119)),c=e.n(a),o=e(117),u=e(118);n.default=function(t){return Object(i.d)(u.d,null,Object(i.d)(c.a,{title:"Publications Page"}),Object(i.d)(o.a,{title:"Publications Page"},"Comming soon"),Object(i.d)(u.a,{center:t},Object(i.d)("h3",null,"this is all about our publications")))}}}]);
+//# sourceMappingURL=component---src-pages-publications-jsx-e048d6bcba3d27e86e6d.js.map

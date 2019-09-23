@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{240:function(t,e,n){"use strict";n.r(e);var a=n(0),c=(n(1),n(119)),u=n.n(c),b=n(117),d=n(118);e.default=function(t){return Object(a.d)(d.d,null,Object(a.d)(u.a,{title:"About Page"}),Object(a.d)(b.a,{title:"About Page"},"Gatsby Tutorial Starter"),Object(a.d)(d.a,{center:t},Object(a.d)("h3",null)))}}}]);
+//# sourceMappingURL=component---src-pages-about-jsx-df186cd80598bdef9d6a.js.map
