@@ -36,6 +36,7 @@ const Text = styled.div`
   max-width: ${props => props.theme.layout.base};
   padding: 0 2rem;
   margin-bottom: 3rem;
+  margin-top:3rem;
   align-items: center;
 `;
 
